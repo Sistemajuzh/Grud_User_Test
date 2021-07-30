@@ -15,4 +15,9 @@ class InvitadoController extends Controller
         // return $this->redirect('/');
         return view('Invitado.index');
     }
+
+    public function tabla()
+    {
+       return view('Invitado.index');
+    }
 }
