@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\InvitadoController;
+use App\Http\Livewire\Tables\AdminClientes;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ use App\Http\Controllers\InvitadoController;
 
 Route::get('/', [InvitadoController::class, 'index']);
 
-
+Route::get('/tabla', AdminClientes::class);
 
 // Route::get('/', function () {
 //     return view('welcome');
